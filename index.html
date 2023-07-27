@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js" integrity="sha512-YKxHqn7D0M5knQJO2xKHZpCfZ+/Ta7qpEHgADN+AkY2U2Y4JJtlCEHzKWV5ZE87vZR3ipdzNJ4U/sfjIaoHMfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Document</title>
@@ -30,13 +31,24 @@
             </ul>
           </div>
           <div class="navbar-end md:navbar-center">
-            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <a class="btn btn-ghost normal-case text-xl text-center">
+              <img class="h-[30px] w-[30px]" src="./images/logo.png" alt="">
+              <h1 class="text-center">Fruit Burst</h1>
+            </a>
           </div>
           <div class="navbar-end items-center">
-            <div class="hidden md:block">
+            <!-- <div class="hidden md:block">
               <input type="text" class="bg-white p-3 rounded-full" />
               <button class="btn btn-ghost btn-circle"></button>
-            </div>
+            </div> -->
+
+          <div class="relative">
+            <input type="text" class="bg-white p-3 rounded-full" />
+            <button class="btn btn-ghost btn-circle absolute"></button>
+           
+           
+
+          </div>
           </div>
         </div>
       </nav>
@@ -137,7 +149,7 @@
         </div>
 
         <div
-          class="invisible md:visible lg:flex ml-32 h-36 w-2/3 absolute bg-white z-10 mx-auto text-center flex p-5 justify-center gap-8 rounded-lg drop-shadow-lg -mt-16"
+          class="hidden md:visible lg:grid grid-cols-5 ml-32 h-auto w-2/3 absolute bg-white z-10 mx-auto text-center  p-5 justify-center gap-8 rounded-lg drop-shadow-lg -mt-16"
         >
           <img src="./images/fruit1.png" alt="" />
           <img src="./images/fruit2.png" alt="" />
